@@ -1,0 +1,51 @@
+program poliza;
+var
+tipo, edad, bebe, lentes, enfermo, salir : Integer;
+costom, costot, costos, costoa, costo, costobase: Real;
+
+begin
+
+     Writeln ('Tipo de Poliza 1=A y 2=B  '); readln (tipo);
+     Writeln ('La persona bebe alcohol 1= si y 0=no  '); readln (bebe);
+     Writeln ('La persona us lentes 1=si y 0=no  '); readln (lentes);
+     Writeln ('La persona padece alguna enfermedad 1=si y 0=no  '); readln (enfermo);
+     Writeln ('Edad de la persona'); readln (edad);
+     case tipo of
+          1: costo:=1200;
+              if (lentes=1) then
+                costo= *0.05
+                costot:=costo;
+
+              writeln (costot);
+
+              if (bebe=1) then
+
+              costoa:=costo;
+
+              writeln (costoa);
+
+              if (enfermo=1) then
+              costom:=costo;
+
+              writeln (costom);
+          2: costo:=950;
+           if (lentes=1) then
+           costos=costo *0.05
+           costot:=costo;
+
+           writeln (costot);
+
+           if (bebe=1) then
+
+           costoa:=costo;
+
+           writeln (costoa);
+
+           if (enfermo=1) then
+           costom:=costo;
+
+           writeln (costom);
+     else
+     exit;
+     end;
+end.
