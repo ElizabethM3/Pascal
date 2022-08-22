@@ -1,0 +1,21 @@
+program hotel;
+var
+noche : Integer;
+precio, d1, d2, d3 : real;
+
+begin
+     Writeln('Ingrese el numero de noches');
+     read(noche);
+
+     precio:=1200;
+
+     d1:=precio;
+     d2:=d1+950;
+     d3:=d2+950;
+
+     case noche of
+          1:writeln('Precio Total:  ', d1);
+          2:writeln('Precio Total:  ', d2);
+          3:writeln('Precio Total:  ', d3);
+     end;
+end.
