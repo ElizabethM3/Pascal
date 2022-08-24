@@ -43,5 +43,5 @@ begin
 
      costot:= costo+costos+costom+costoa+coston;
 
-     writeln('Costototal: ', costot);
+     writeln('Costototal: ', costos);
 end.
